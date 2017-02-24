@@ -486,7 +486,7 @@
         <javadb.version>10.10.2.0</javadb.version>
         <hsqldb.version>2.4.3</hsqldb.version>
         <mysql-connector-java.version>6.0.5</mysql-connector-java.version>
-        <!-- Available Plugins org.apache.maven.plugins -->
+        <!-- Available Plugins org.apache.maven.plugins from https://maven.apache.org/plugins/ and http://www.mojohaus.org/mojo-parent/plugin-management.html-->
         <!-- Core plugins -->
         <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>

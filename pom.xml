@@ -25,6 +25,7 @@
     </properties>
 
     <modules>
+        <module>ecommerce-liquibase</module>
         <module>ecommerce-model</module>
         <module>ecommerce-modules</module>
         <module>ecommerce-core</module>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ecommerce.iml" filepath="$PROJECT_DIR$/ecommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-core.iml" filepath="$PROJECT_DIR$/ecommerce-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-liquibase.iml" filepath="$PROJECT_DIR$/ecommerce-liquibase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-model.iml" filepath="$PROJECT_DIR$/ecommerce-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-modules.iml" filepath="$PROJECT_DIR$/ecommerce-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-search.iml" filepath="$PROJECT_DIR$/ecommerce-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-shipping.iml" filepath="$PROJECT_DIR$/ecommerce-shipping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce-shop.iml" filepath="$PROJECT_DIR$/ecommerce-shop.iml" />
+    </modules>
+  </component>
+</project>

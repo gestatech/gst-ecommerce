@@ -42,6 +42,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Intellij
+.idea/*
+.impl
+*.impl
+
+
 # Compiled class file
 *.class
 

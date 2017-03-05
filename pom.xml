@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>be.gestatech</groupId>
-        <artifactId>corporate-pom</artifactId>
+        <artifactId>gst-corporate-pom</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-	<groupId>be.gestatech</groupId>
-	<artifactId>ecommerce</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+    <groupId>be.gestatech</groupId>
+    <artifactId>ecommerce</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
+    <name>ecommerce</name>
     <inceptionYear>2017</inceptionYear>
-
-	<name>ecommerce</name>
-	<url>https://github.com/gestatech/gst-ecommerce</url>
+    <description>sample ecommerce project.</description>
+    <url>https://github.com/gestatech/gst-ecommerce</url>
 
     <properties>
-        <jdk.version>1.8</jdk.version>
-        <gst-ecommerce.version>2.0.5-SNAPSHOT</gst-ecommerce.version>
-        <org.elasticsearch-version>5.2.0</org.elasticsearch-version>
-        <mysql-jdbc-version>6.0.5</mysql-jdbc-version>
+        <gst-ecommerce.version>1.0.0-SNAPSHOT</gst-ecommerce.version>
+        <liquibase.executionPhase>initialize</liquibase.executionPhase>
     </properties>
 
     <modules>
+        <module>ecommerce-liquibase</module>
         <module>ecommerce-model</module>
         <module>ecommerce-modules</module>
         <module>ecommerce-core</module>
@@ -38,23 +37,35 @@
 
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-jdbc-version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
-        <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>${org.elasticsearch-version}</version>
-        </dependency>
-    </dependencies>
+    <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>properties-maven-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>org.liquibase</groupId>
+                    <artifactId>liquibase-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>

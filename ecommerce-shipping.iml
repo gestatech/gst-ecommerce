@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/ecommerce-shipping/target/classes" />
+    <output-test url="file://$MODULE_DIR$/ecommerce-shipping/target/test-classes" />
+    <content url="file://$MODULE_DIR$/ecommerce-shipping">
+      <excludeFolder url="file://$MODULE_DIR$/ecommerce-shipping/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch:5.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-backward-codecs:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-grouping:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-highlighter:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-join:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-memory:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-misc:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queries:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queryparser:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-sandbox:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spatial:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spatial-extras:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spatial3d:6.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-suggest:6.4.1" level="project" />
+  </component>
+</module>

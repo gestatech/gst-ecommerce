@@ -47,3 +47,11 @@ Temporary Items
 .impl
 *.impl
 
+.idea/
+ecommerce-core/target/
+ecommerce-liquibase/target/
+ecommerce-model/target/
+ecommerce-modules/target/
+ecommerce-search/target/
+ecommerce-shipping/target/
+ecommerce-shop/target/

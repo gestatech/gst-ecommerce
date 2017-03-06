@@ -47,6 +47,14 @@ Temporary Items
 .impl
 *.impl
 
+.idea/
+ecommerce-core/target/
+ecommerce-liquibase/target/
+ecommerce-model/target/
+ecommerce-modules/target/
+ecommerce-search/target/
+ecommerce-shipping/target/
+ecommerce-shop/target/
 
 # Compiled class file
 *.class
@@ -70,9 +78,4 @@ Temporary Items
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-ecommerce-core/target/
-ecommerce-model/target/
-ecommerce-modules/target/
-ecommerce-search/target/
-ecommerce-shipping/target/
-ecommerce-shop/target/
+
